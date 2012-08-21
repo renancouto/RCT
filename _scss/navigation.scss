@@ -1,0 +1,42 @@
+// NAVIGATION
+
+.main-nav {	
+	margin-top: $u*6;
+	margin-left: 34px;
+	
+	.menu-item a {
+		color: $c-orange;
+		font: 400 12px $f;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;		
+		text-shadow: #000 0 -1px 0;
+		
+		&:before {
+			background: $s-icons -5px -5px;
+			content: '';
+			display: none;
+			position: absolute;
+			top: 1px;
+			left: -12px;
+			@include dim(6px, 7px);
+		}
+		
+		&:hover {
+			color: lighten($c-orange, 20);
+		}
+	}
+	
+	.current-menu-item a,
+	.current-page-ancestor a {
+		cursor: default;
+		
+		&:hover {
+			color: $c-orange;
+		}
+		
+		&:before {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+// RESET EXTRAS
+// @updated		Set 17 2011 by Renan Couto
+
+// ***** You SHOULD NOT change this file. But if you have to, your updates must be GENERIC so they can fit further projects *****
+
+blockquote, q 
+{
+	quotes: none;	
+	&:before, &:after { content: ''; content: none; }
+}
+
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+// Remove scrollbar in textarea on IE, Improves readability and aligment in all browsers
+textarea { overflow: auto; vertical-align: top; }
+
+// Force redraw on IE8, fix outline/scroll bug on Firefox 3.6, remove unnecessary margin
+// Source: copied from swffit, https://github.com/millermedeiros/basis.css/blob/master/basis/reset.css
+object { outline: none; display: block; overflow: hidden; }

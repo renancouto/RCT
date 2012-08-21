@@ -1,0 +1,314 @@
+/*   
+Theme Name: Renan Couto
+Theme URI: http://renancouto.com
+Description: Let's get this started!
+Author: Renan Couto
+Author URI: http://renancouto.com
+Version: 1
+*/
+
+// Imports
+
+@import	
+	'_/scss/reset/_',
+	'_/scss/shared/_';	
+
+// VARS
+// Units
+$u: 5px;
+
+// Paths
+$p-images: '_/img/';
+
+// Fonts
+$f: Exo, Arial, sans-serif;
+
+// Colors
+$c-orange: #ffb319;
+$c-orange-link: #ffd400;
+
+// Sprites
+$s-icons: url($p-images + 'icons.png');
+
+
+// HELPERS
+.group {
+	@include group;
+}
+
+
+// STRUCTURE
+body {
+	background-image: url($p-images + 'bg-grad.jpg'), url($p-images + 'bg.png');
+	background-repeat: no-repeat, repeat;
+	background-position: top center, top left;
+	background-attachment: fixed, fixed;
+}
+
+.main-wrapper {
+	margin: auto;
+	max-width: 1200px;
+	min-width: 960px;
+	padding: $u*6 0;
+	position: relative;
+}
+
+.main-header {
+	margin-left: $u*4;
+	position: fixed;
+	width: 170px;
+	
+	.logo {		
+		font: 700 18px $f;
+		position: relative;
+		text-shadow: #000 0 -1px 0;
+		text-transform: uppercase;
+		
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		span {
+			position: relative;
+			top: 2px;
+		}
+	}
+	
+	.slogan {
+		color: darken(#fff, 15);
+		display: block;
+		font: 400 12px $f;
+		margin: -5px 0 0 34px;
+		text-shadow: #000 0 -1px 0;
+		text-transform: uppercase;
+	}
+}
+
+.main-content {
+	margin-left: 200px;
+}
+
+
+// NAVIGATION
+.main-nav {	
+	margin-top: $u*6;
+	margin-left: 34px;
+	
+	.menu-item a {
+		color: $c-orange;
+		font: 400 12px $f;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;		
+		text-shadow: #000 0 -1px 0;
+		
+		&:before {
+			background: $s-icons -5px -5px;
+			content: '';
+			display: none;
+			position: absolute;
+			top: 1px;
+			left: -12px;
+			@include dim(6px, 7px);
+		}
+		
+		&:hover { color: lighten($c-orange, 20); }
+	}
+	
+	.current-menu-item a,
+	.current-page-ancestor a {
+		cursor: default;
+		
+		&:hover { color: $c-orange; }		
+		&:before { display: block; }
+	}
+}
+
+
+// GRID
+.grid-list {
+	
+	li {
+		float: left;
+		margin-right: $u*6;
+	}
+	
+	.item {
+		background: #fff;
+		border-radius: 2px;
+		box-shadow: rgba(0,0,0,.75) 0 1px 5px;
+		display: block;
+		padding: 2px;
+		position: relative;
+		
+		img { display: block; }
+		
+		&:hover {
+			.tooltip { display: block; }
+		}
+	}
+	
+	.tooltip {
+		background: darken(#fff, 80);
+		border-radius: $u;
+		box-shadow: rgba(0,0,0,.75) 0 4px 8px;
+		color: #fff;
+		display: none;
+		font: 400 12px $f;		
+		position: absolute;
+		text-align: center;
+		width: 90%;
+		margin: 0 4%;
+		top: -25px;
+		text-transform: uppercase;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			margin-left: -10px;
+			@include arrow(10px, darken(#fff, 80), bottom, top);
+		}
+		
+		span {
+			display: inline-block;
+			padding: $u*2;
+		}
+	}	
+}
+
+
+// PORTFOLIO ITEM
+.portfolio-item {
+	
+	> .info {
+		position: fixed;
+		margin-left: -218px;
+		top: 260px;
+	}
+	
+	> .content {
+		padding: $u*4 0 $u*4 43px;
+		
+		figure {
+			margin-top: $u*4;
+			
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	
+	.item-title {
+		background: url($p-images + 'title-bg.png') repeat-y;
+		color: $c-orange;
+		font: 200 30px $f;
+		margin-bottom: $u*8;
+		position: relative;
+		text-transform: uppercase;
+		text-shadow: #000 0 -1px 0;
+		width: 326px;
+		
+		&:after, &:before {
+			background: url($p-images + 'title-sprite.png');
+			content: '';
+			display: block;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+		
+		&:after {
+			bottom: -85px;
+			height: 85px;
+			@include bg-pos(0, -4px);				
+		}
+		
+		&:before {
+			height: 4px;
+			top: -4px;
+		}
+		
+		span {
+			display: block;
+			padding: $u*3;
+			padding-left: 70px;
+		}
+	}
+	
+	.meta {
+		margin-left: 72px;
+		width: 150px;
+		
+		li {
+			margin-top: $u*2;
+			position: relative;
+			
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		
+		.title {
+			background: $s-icons;
+			position: absolute;
+			left: -18px;
+			@include hide-text;
+		}
+		
+		.description {
+			color: #fff;
+			font: 500 12px $f;
+			text-shadow: #000 0 -1px 0;
+		}
+		
+		.about {
+			.title {
+				@include dim(8px, 12px);
+				@include bg-pos(-17px, -5px);
+			}
+		}
+		
+		.release-date {
+			.title {
+				@include dim(10px, 11px);
+				@include bg-pos(-30px, -5px);
+			}
+		}
+		
+		.tags {
+			.title {
+				top: 4px;
+				@include dim(11px, 6px);
+				@include bg-pos(-45px, -5px);
+			}
+			
+			.description a {
+				color: #fff;
+				font-size: 10px;
+				text-decoration: none;
+				text-transform: uppercase;
+				
+				&:hover {
+					color: $c-orange-link;
+				}
+			}
+		}
+	}
+	
+	.figure {
+		background: #fff;
+		border-radius: $u;
+		box-shadow: rgba(0,0,0,.75) 0 1px 5px;
+		display: block;
+		padding: $u;
+	}
+}
+
