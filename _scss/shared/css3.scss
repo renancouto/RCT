@@ -3,8 +3,7 @@
 // ***** You SHOULD NOT change this file. But if you have to, your updates must be GENERIC so they can fit further projects *****
 
 // Border Radius
-@mixin border-radius($rad, $isLegacy: false)
-{
+@mixin border-radius($rad, $isLegacy: false) {
 	@if ($isLegacy) {
 		-moz-border-radius:		$rad;
 		-webkit-border-radius:	$rad;
@@ -14,8 +13,7 @@
 }
 
 // Transition
-@mixin transition($property, $duration: .2s, $ease: linear, $delay: 0)
-{
+@mixin transition($property, $duration: .2s, $ease: linear, $delay: 0) {
 	$transition: $property $duration $ease;
 	@if ($delay > 0) { $transition: $property $duration $ease $delay; }
 	
@@ -28,8 +26,7 @@
 }
 
 // Linear Gradient
-@mixin linear-gradient($start, $end)
-{
+@mixin linear-gradient($start, $end) {
     background: $start;	// Old browsers
     background: -moz-linear-gradient(top, $start 0%, $end 100%);	// FF3.6+
     background: -webkit-linear-gradient(top, $start 0%, $end 100%);	// Chrome10+,Safari5.1+
@@ -37,4 +34,13 @@
     background: -ms-linear-gradient(top, $start 0%, $end 100%);	// IE10+
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$end');	// IE6-9
     background: linear-gradient(top, $start 0%, $end 100%);	// W3C
+}
+
+// Box sizing
+@mixin box-sizing($val) {
+	@each $prefix in webkit, moz {
+		#{''}-#{$prefix}-box-sizing: $val;
+	}
+
+	box-sizing: $val;
 }

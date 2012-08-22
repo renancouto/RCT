@@ -38,15 +38,8 @@
 	function register_my_menus() {
 		register_nav_menus(
 			array(
-				'main-nav-menu' => __( 'Menu Principal' )
+				'main-nav-menu' => __( 'Main Menu' )
 			)
 		);
 	}
-
-	// Enables SASS to CSS automatic generation
-	function generate_css() {
-	  if(function_exists('wpsass_define_stylesheet'))
-		wpsass_define_stylesheet("style.scss", "style.css");
-	}
-	add_action( 'after_setup_theme', 'generate_css' );
 ?>

@@ -23,7 +23,7 @@
 	.item-title {
 		background: url($p-images + 'title-bg.png') repeat-y;
 		color: $c-orange;
-		font: 200 30px $f;
+		font: 200 30px/1em $f;
 		margin-bottom: $u*8;
 		position: relative;
 		text-transform: uppercase;
@@ -78,9 +78,10 @@
 		}
 		
 		.description {
-			color: #fff;
-			font: 500 12px $f;
+			color: darken(#fff, 10);
+			font: 500 10px $f;
 			text-shadow: #000 0 -1px 0;
+			text-transform: uppercase;
 		}
 		
 		.about {
@@ -103,17 +104,13 @@
 				@include dim(11px, 6px);
 				@include bg-pos(-45px, -5px);
 			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
 			
-			.description a {
-				color: #fff;
-				font-size: 10px;
-				text-decoration: none;
-				text-transform: uppercase;
-				
-				&:hover {
-					color: $c-orange-link;
-				}
-			}
+			&:hover { color: $c-orange-link; }
 		}
 	}
 	

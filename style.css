@@ -1,6 +1,6 @@
 /*   
-Theme Name: Renan Couto
-Theme URI: http://renancouto.com
+Theme Name: RCT
+Theme URI: https://github.com/renancouto/RCT
 Description: Let's get this started!
 Author: Renan Couto
 Author URI: http://renancouto.com
@@ -81,18 +81,16 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 .main-nav .current-menu-item a:before, .main-nav .current-page-ancestor a:before { display: block; }
 
 .grid-list li { float: left; margin: 0 20px 20px 0; }
-.grid-list .item { background: #fff; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; padding: 2px; position: relative; }
-.grid-list .item img { display: block; }
-.grid-list .item:hover .tooltip { display: block; }
-.grid-list .tooltip { background: #333333; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.75) 0 4px 8px; color: #fff; display: none; font: 400 12px Exo, Arial, sans-serif; position: absolute; text-align: center; width: 90%; margin: 0 4%; top: -25px; text-transform: uppercase; }
-.grid-list .tooltip:after { content: ''; position: absolute; bottom: -10px; left: 50%; margin-left: -10px; border: 10px solid transparent; border-bottom: none; border-top-color: #333333; }
-.grid-list .tooltip span { display: inline-block; padding: 10px; }
+.grid-list .item { background: #fff; border: 2px solid #fff; border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; position: relative; overflow: hidden; }
+.grid-list .item img { border-radius: 2px; display: block; }
+.grid-list .item:hover .info { bottom: 0; opacity: 1; }
+.grid-list .info { background: rgba(30, 30, 30, 0.8); border-radius: 0 0 2px 2px; color: #fff; font: 400 12px Exo, Arial, sans-serif; width: 100%; position: absolute; bottom: -10px; opacity: 0; text-align: center; padding: 5px; text-transform: uppercase; text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .portfolio-item > .info { position: fixed; margin-left: -218px; top: 260px; }
 .portfolio-item > .content { padding: 20px 0 20px 43px; }
 .portfolio-item > .content figure { margin-top: 20px; }
 .portfolio-item > .content figure:first-child { margin-top: 0; }
-.portfolio-item .item-title { background: url("_/img/title-bg.png") repeat-y; color: #ffb319; font: 200 30px Exo, Arial, sans-serif; margin-bottom: 40px; position: relative; text-transform: uppercase; text-shadow: black 0 -1px 0; width: 326px; }
+.portfolio-item .item-title { background: url("_/img/title-bg.png") repeat-y; color: #ffb319; font: 200 30px/1em Exo, Arial, sans-serif; margin-bottom: 40px; position: relative; text-transform: uppercase; text-shadow: black 0 -1px 0; width: 326px; }
 .portfolio-item .item-title:after, .portfolio-item .item-title:before { background: url("_/img/title-sprite.png"); content: ''; display: block; left: 0; position: absolute; width: 100%; }
 .portfolio-item .item-title:after { bottom: -85px; height: 85px; background-position: 0 -4px; }
 .portfolio-item .item-title:before { height: 4px; top: -4px; }
@@ -101,10 +99,10 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 .portfolio-item .meta li { margin-top: 10px; position: relative; }
 .portfolio-item .meta li:first-child { margin-top: 0; }
 .portfolio-item .meta .title { background: url("_/img/icons.png"); position: absolute; left: -18px; text-indent: 100%; white-space: nowrap; overflow: hidden; }
-.portfolio-item .meta .description { color: #fff; font: 500 12px Exo, Arial, sans-serif; text-shadow: black 0 -1px 0; }
-.portfolio-item .meta .description a { color: #fff; display: inline-block; font-size: 10px; text-decoration: none; text-transform: uppercase; }
-.portfolio-item .meta .description a:hover { color: #ffd400; }
+.portfolio-item .meta .description { color: #e6e6e6; font: 500 10px Exo, Arial, sans-serif; text-shadow: black 0 -1px 0; text-transform: uppercase; }
 .portfolio-item .meta .about .title { width: 8px; height: 12px; background-position: -17px -5px; }
 .portfolio-item .meta .release-date .title { width: 10px; height: 11px; background-position: -30px -5px; }
 .portfolio-item .meta .tags .title { top: 4px; width: 11px; height: 6px; background-position: -45px -5px; }
+.portfolio-item .meta a { color: #fff; text-decoration: none; }
+.portfolio-item .meta a:hover { color: #ffd400; }
 .portfolio-item .figure { background: #fff; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; padding: 5px; }

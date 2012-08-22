@@ -18,7 +18,7 @@
 	?>
 		<li>
 			<a class="item" href="portfolio/<?php echo $url ?>">
-				<div class="tooltip"><span><?php echo $title ?></span></div>
+				<span class="info"><?php echo $title ?></span>
 				<img src="<?php echo $thumbnail ?>">
 			</a>
 		</li>

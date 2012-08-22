@@ -4,55 +4,45 @@
 	
 	li {
 		float: left;
-		margin-right: $u*4;
+		margin: 0 $u*4 $u*4 0;
 	}
 	
 	.item {
 		background: #fff;
-		border-radius: 2px;
+		border: 2px solid #fff;
+		border-radius: 4px;
 		box-shadow: rgba(0,0,0,.75) 0 1px 5px;
 		display: block;
-		padding: 2px;
 		position: relative;
+		overflow: hidden;
 		
 		img {
+			border-radius: 2px;
 			display: block;
 		}
 		
 		&:hover {
-			.tooltip {
-				display: block;
+			.info {				
+				bottom: 0;
+				opacity: 1;
 			}
 		}
 	}
-	
-	.tooltip {
-		background: darken(#fff, 80);
-		border-radius: $u;
-		box-shadow: rgba(0,0,0,.75) 0 4px 8px;
-		color: #fff;
-		display: none;
-		font: 400 12px $f;		
-		position: absolute;
-		text-align: center;
-		width: 90%;
-		margin: 0 4%;
-		top: -25px;
-		text-transform: uppercase;
-		
-		&:after {
-			content: '';
-			position: absolute;
-			bottom: -10px;
-			left: 50%;
-			margin-left: -10px;
-			@include arrow(10px, darken(#fff, 80), bottom, top);
-		}
-		
-		span {
-			display: inline-block;
-			padding: $u*2;
-		}
-	}	
-}
 
+	.info {
+		background: rgba(30,30,30,.8);
+		border-radius: 0 0 2px 2px;
+		color: #fff;
+		font: 400 12px $f;
+		width: 100%;
+		position: absolute;
+		bottom: -10px;
+		opacity: 0;
+		text-align: center;
+		padding: $u;
+		text-transform: uppercase;
+		text-shadow: rgba(0,0,0,.5) 0 -1px 0;
+		@include transition(all);
+		@include box-sizing(border-box);
+	}
+}

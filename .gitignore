@@ -169,3 +169,11 @@ pip-log.txt
 
 # SASS Cache folder
 .sass-cache
+
+
+############
+## SUBLIME TEXT 2
+############
+
+sftp-config.json
+*.sublime-*
