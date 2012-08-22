@@ -2,7 +2,6 @@
 <html class="no-js" lang="en">
 
 <head>
-
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
@@ -12,22 +11,22 @@
 
 	<title>
 		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page() && !is_front_page())) {
-		         wp_title(''); echo ' - '; }		      
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
+			  if (function_exists('is_tag') && is_tag()) {
+				 single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+			  elseif (is_archive()) {
+				 wp_title(''); echo ' Archive - '; }
+			  elseif (is_search()) {
+				 echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+			  elseif (!(is_404()) && (is_single()) || (is_page() && !is_front_page())) {
+				 wp_title(''); echo ' - '; }		      
+			  elseif (is_404()) {
+				 echo 'Not Found - '; }
+			  if (is_home()) {
+				 bloginfo('name'); echo ' - '; bloginfo('description'); }
+			  else {
+				  bloginfo('name'); }
+			  if ($paged>1) {
+				 echo ' - page '. $paged; }
 		   ?>
 	</title>
 	
@@ -38,7 +37,7 @@
 				 wp_title(''); echo ' Archive - '; }
 			  elseif (is_search()) {
 				 echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-			  elseif (!(is_404()) && (is_single()) || (is_page())) {
+			  elseif (!(is_404()) && (is_single()) || (is_page() && !is_front_page())) {
 				 wp_title(''); echo ' - '; }
 			  elseif (is_404()) {
 				 echo 'Not Found - '; }
@@ -49,11 +48,8 @@
 			  if ($paged>1) {
 				 echo ' - page '. $paged; }
 		   ?>">
-	<meta name="description" content="<?php bloginfo('description'); ?>">
-	
-	<meta name="google-site-verification" content="">
-	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
-	
+	<meta name="description" content="<?php bloginfo('description'); ?>">	
+	<meta name="google-site-verification" content="googlea35d3a24b1f5905e.html">	
 	<meta name="author" content="Renan Couto">
 	
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">		 
@@ -67,11 +63,11 @@
 	};
 	(function() {
 		var wf = document.createElement('script');
-		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-		wf.type = 'text/javascript';
-		wf.async = 'true';
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
 		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(wf, s);
+			s.parentNode.insertBefore(wf, s);
 	})();
 	</script>
 	
@@ -81,7 +77,20 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>	
+	<?php wp_head(); ?>
+
+	<script>
+	var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-34287307-1']);
+		_gaq.push(['_setDomainName', 'renancouto.com']);
+		_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
 </head>
 
 <body <?php body_class(); ?>>	
