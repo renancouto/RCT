@@ -105,4 +105,4 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 .portfolio-item .meta .tags .title { top: 4px; width: 11px; height: 6px; background-position: -45px -5px; }
 .portfolio-item .meta a { color: #fff; text-decoration: none; }
 .portfolio-item .meta a:hover { color: #ffd400; }
-.portfolio-item .figure { background: #fff; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; padding: 5px; }
+.portfolio-item .figure { background: #fff; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; padding: 5px; width: 90%; max-width: 850px; }
