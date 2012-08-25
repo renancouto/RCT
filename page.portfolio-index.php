@@ -2,6 +2,13 @@
 <?php remove_filter ('the_content', 'wpautop'); ?>
 <?php get_header(); ?>
 
+<header class="main-header">
+	<?php
+		include (TEMPLATEPATH . '/_/inc/header.php' );
+		include (TEMPLATEPATH . '/_/inc/social.php' );
+	?>
+</header>
+
 <section class="main-content" id="main-content">
 	<ul class="grid-list group">
 	<?php

@@ -1,0 +1,99 @@
+// PORTFOLIO ITEM INFO
+
+.portfolio-item-info {
+	margin: $u*7 0 0 -38px;
+
+	.item-title {
+		background: url($p-images + 'title-bg.png') repeat-y;
+		color: $c-orange;
+		font: 200 30px/1em $f;
+		margin-bottom: $u*8;
+		position: relative;
+		text-transform: uppercase;
+		text-shadow: #000 0 -1px 0;
+		width: 326px;
+		
+		&:after, &:before {
+			background: url($p-images + 'title-sprite.png');
+			content: '';
+			display: block;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+		
+		&:after {
+			bottom: -85px;
+			height: 85px;
+			@include bg-pos(0, -4px);				
+		}
+		
+		&:before {
+			height: 4px;
+			top: -4px;
+		}
+		
+		span {
+			display: block;
+			padding: $u*3;
+			padding-left: 70px;
+		}
+	}
+	
+	.meta {
+		margin-left: 72px;
+		width: 150px;
+		
+		li {
+			margin-top: $u*2;
+			position: relative;
+			
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		
+		.title {
+			background: $s-icons;
+			position: absolute;
+			left: -18px;
+			@include hide-text;
+		}
+		
+		.description {
+			color: darken(#fff, 10);
+			font: 500 10px $f;
+			text-shadow: #000 0 -1px 0;
+			text-transform: uppercase;
+		}
+		
+		.about {
+			.title {
+				@include dim(8px, 12px);
+				@include bg-pos(-17px, -5px);
+			}
+		}
+		
+		.release-date {
+			.title {
+				@include dim(10px, 11px);
+				@include bg-pos(-30px, -5px);
+			}
+		}
+		
+		.tags {
+			.title {
+				top: 4px;
+				@include dim(11px, 6px);
+				@include bg-pos(-45px, -5px);
+			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			
+			&:hover { color: $c-orange-link; }
+		}
+	}
+}
