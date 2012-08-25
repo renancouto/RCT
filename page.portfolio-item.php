@@ -2,7 +2,7 @@
 <?php remove_filter ('the_content', 'wpautop'); ?>
 <?php get_header(); ?>
 
-<section class="main-content updatable" id="main-content">
+<section class="main-content" id="main-content">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<article class="portfolio-item">
 		<aside class="info">

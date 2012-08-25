@@ -1,0 +1,10 @@
+// SOCIAL
+
+.social-area {
+	margin: $u*6 0 0 34px;
+
+	> li {
+		margin: $u 0 -3px 0;
+		&:first-child { margin: 0; }
+	}
+}

@@ -72,13 +72,17 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 
 .main-content { margin-left: 200px; }
 
-.main-nav { margin-top: 30px; margin-left: 34px; }
+.main-nav { margin: 30px 0 0 34px; }
 .main-nav .menu-item a { color: #ffb319; font: 400 12px Exo, Arial, sans-serif; position: relative; text-decoration: none; text-transform: uppercase; text-shadow: black 0 -1px 0; }
 .main-nav .menu-item a:before { background: url("_/img/icons.png") -5px -5px; content: ''; display: none; position: absolute; top: 1px; left: -12px; width: 6px; height: 7px; }
 .main-nav .menu-item a:hover { color: #ffd57f; }
 .main-nav .current-menu-item a, .main-nav .current-page-ancestor a { cursor: default; }
 .main-nav .current-menu-item a:hover, .main-nav .current-page-ancestor a:hover { color: #ffb319; }
 .main-nav .current-menu-item a:before, .main-nav .current-page-ancestor a:before { display: block; }
+
+.social-area { margin: 30px 0 0 34px; }
+.social-area > li { margin: 5px 0 -3px 0; }
+.social-area > li:first-child { margin: 0; }
 
 .grid-list li { float: left; margin: 0 20px 20px 0; }
 .grid-list .item { background: #fff; border: 2px solid #fff; border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; position: relative; overflow: hidden; }

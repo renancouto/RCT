@@ -2,7 +2,7 @@
 <?php remove_filter ('the_content', 'wpautop'); ?>
 <?php get_header(); ?>
 
-<section class="main-content updatable" id="main-content">
+<section class="main-content" id="main-content">
 	<ul class="grid-list group">
 	<?php
 	$my_wp_query = new WP_Query();

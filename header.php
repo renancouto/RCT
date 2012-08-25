@@ -105,7 +105,9 @@
 			
 			<h2 class="slogan"><?php bloginfo('description'); ?></h2>
 			
-			<nav class="main-nav updatable" id="main-nav">
+			<nav class="main-nav" id="main-nav">
 				<?php wp_nav_menu (array ( 'theme_location' => 'main-nav-menu', 'container' => '', 'items_wrap' => '<ul>%3$s</ul>') ); ?>
 			</nav>
+
+			<?php include (TEMPLATEPATH . '/_/inc/social.php' ); ?>
 		</header>
