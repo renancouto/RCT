@@ -28,10 +28,10 @@
 				<p class="description"><?php echo $release_date ?></p>
 			</li>
 			
-			<li class="tags">
+			<!-- <li class="tags">
 				<h3 class="title">Tags</h3>
 				<p class="description"><?php the_tags(''); ?></p>
-			</li>			
+			</li> -->			
 		</ul>
 
 		<?php include (TEMPLATEPATH . '/_/inc/social.php' ); ?>
