@@ -13,7 +13,7 @@
 	<ul class="grid-list group">
 	<?php
 	$my_wp_query = new WP_Query();
-	$all_wp_pages = $my_wp_query -> query(array('post_type' => 'page'));
+	$all_wp_pages = $my_wp_query -> query(array('post_type' => 'page', 'orderby' => 'menu_order'));
 	$portfolio = get_page_by_title('Portfolio');
 	$portfolio_children = get_page_children($portfolio -> ID, $all_wp_pages);
 	
