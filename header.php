@@ -48,8 +48,7 @@
 			  if ($paged>1) {
 				 echo ' - page '. $paged; }
 		   ?>">
-	<meta name="description" content="<?php bloginfo('description'); ?>">	
-	<meta name="google-site-verification" content="googlea35d3a24b1f5905e.html">	
+	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta name="author" content="Renan Couto">
 	
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">		 
