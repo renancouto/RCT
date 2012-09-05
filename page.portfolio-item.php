@@ -7,9 +7,9 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<aside class="portfolio-item-info">
-		<h2 class="item-title">
+		<h1 class="heading">
 			<span><?php the_title(); ?></span>
-		</h2>
+		</h1>
 		
 		<?php
 			$id = $post -> ID;

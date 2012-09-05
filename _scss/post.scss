@@ -1,0 +1,19 @@
+// POST
+
+.post {
+	color: #fff;
+	font: 14px $f-text;
+	text-shadow: rgba(0,0,0,.7) 0 1px 1px;
+
+	.meta {
+		margin-bottom: $u*3;
+	}
+
+	.date {
+		color: $c-orange;
+		font: 12px $f-heading;
+		text-transform: uppercase;
+	}
+
+	a { color: $c-orange-link; }
+}

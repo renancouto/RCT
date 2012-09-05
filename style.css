@@ -72,6 +72,8 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 
 .main-content { margin-left: 200px; }
 
+.heading { color: #ffb319; font: 200 30px/1em Exo, Arial, sans-serif; text-transform: uppercase; text-shadow: black 0 -1px 0; }
+
 .main-nav { margin: 30px 0 0 34px; }
 .main-nav .menu-item a { color: #ffb319; font: 400 12px Exo, Arial, sans-serif; position: relative; text-decoration: none; text-transform: uppercase; text-shadow: black 0 -1px 0; }
 .main-nav .menu-item a:before { background: url("_/img/icons.png") -5px -5px; content: ''; display: none; position: absolute; top: 1px; left: -12px; width: 6px; height: 7px; }
@@ -97,11 +99,11 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 .portfolio-item .figure { background: #fff; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.75) 0 1px 5px; display: block; padding: 5px; width: 90%; max-width: 850px; }
 
 .portfolio-item-info { margin: 35px 0 0 -38px; }
-.portfolio-item-info .item-title { background: url("_/img/title-bg.png") repeat-y; color: #ffb319; font: 200 30px/1em Exo, Arial, sans-serif; margin-bottom: 40px; position: relative; text-transform: uppercase; text-shadow: black 0 -1px 0; width: 326px; }
-.portfolio-item-info .item-title:after, .portfolio-item-info .item-title:before { background: url("_/img/title-sprite.png"); content: ''; display: block; left: 0; position: absolute; width: 100%; }
-.portfolio-item-info .item-title:after { bottom: -85px; height: 85px; background-position: 0 -4px; }
-.portfolio-item-info .item-title:before { height: 4px; top: -4px; }
-.portfolio-item-info .item-title span { display: block; padding: 15px; padding-left: 70px; }
+.portfolio-item-info .heading { background: url("_/img/title-bg.png") repeat-y; margin-bottom: 40px; position: relative; width: 326px; }
+.portfolio-item-info .heading:after, .portfolio-item-info .heading:before { background: url("_/img/title-sprite.png"); content: ''; display: block; left: 0; position: absolute; width: 100%; }
+.portfolio-item-info .heading:after { bottom: -85px; height: 85px; background-position: 0 -4px; }
+.portfolio-item-info .heading:before { height: 4px; top: -4px; }
+.portfolio-item-info .heading span { display: block; padding: 15px; padding-left: 70px; }
 .portfolio-item-info .meta { margin-left: 72px; width: 150px; }
 .portfolio-item-info .meta li { margin-top: 10px; position: relative; }
 .portfolio-item-info .meta li:first-child { margin-top: 0; }
@@ -112,3 +114,8 @@ body { background-image: url("_/img/bg-grad.jpg"), url("_/img/bg.png"); backgrou
 .portfolio-item-info .meta .tags .title { top: 4px; width: 11px; height: 6px; background-position: -45px -5px; }
 .portfolio-item-info .meta a { color: #fff; text-decoration: none; }
 .portfolio-item-info .meta a:hover { color: #ffd400; }
+
+.post { color: #fff; font: 14px "Source Sans Pro", Arial, sans-serif; text-shadow: rgba(0, 0, 0, 0.7) 0 1px 1px; }
+.post .meta { margin-bottom: 15px; }
+.post .date { color: #ffb319; font: 12px Exo, Arial, sans-serif; text-transform: uppercase; }
+.post a { color: #ffd400; }

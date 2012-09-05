@@ -19,39 +19,37 @@ body {
 	margin-left: $u*4;
 	position: fixed;
 	width: 170px;
-	
-	.logo {		
-		font: 700 18px $f;
+
+	.logo {
+		font: 700 18px $f-heading;
 		position: relative;
 		text-shadow: #000 0 -1px 0;
 		text-transform: uppercase;
-		
+
 		a {
 			color: #fff;
 			text-decoration: none;
 		}
-		
+
 		img {
 			display: inline-block;
 			vertical-align: middle;
 		}
-		
+
 		span {
 			position: relative;
 			top: 2px;
 		}
 	}
-	
+
 	.slogan {
 		color: darken(#fff, 15);
 		display: block;
-		font: 400 12px $f;
+		font: 400 12px $f-heading;
 		margin: -5px 0 0 34px;
 		text-shadow: #000 0 -1px 0;
 		text-transform: uppercase;
 	}
 }
 
-.main-content {
-	margin-left: 200px;
-}
+.main-content { margin-left: 200px; }

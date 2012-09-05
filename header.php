@@ -2,6 +2,8 @@
 <html class="no-js" lang="en">
 
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Exo:200,500,700,200italic,500italic,700italic' rel='stylesheet' type='text/css'>
+	
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
@@ -55,20 +57,6 @@
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/_/img/apple-touch-icon.png">
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	
-	<script>
-	WebFontConfig = {
-		google: { families: ['Exo:200,500,700,500italic,700italic,200italic:latin'] }
-	};
-	(function() {
-		var wf = document.createElement('script');
-			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-		var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-	})();
-	</script>
 	
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/libs/modernizr-2.5.3.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/libs/browsr-0.2.js"></script>
