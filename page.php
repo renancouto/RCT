@@ -11,7 +11,7 @@
 		<article class="post" id="post-<?php the_ID(); ?>">
 
 			<h1 class="heading"><?php the_title(); ?></h2>
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+			<?php /*include (TEMPLATEPATH . '/_/inc/meta.php' );*/ ?>
 
 			<div class="entry">
 				<?php
@@ -20,7 +20,7 @@
 				?>
 			</div>
 
-			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+			<?php edit_post_link('Editar', '<p>', '</p>'); ?>
 
 		</article>
 
@@ -28,7 +28,7 @@
 
 		<?php endwhile; endif; ?>
 
-<?php get_sidebar(); ?>
+<?php /*get_sidebar();*/ ?>
 </section>
 
 <?php get_footer(); ?>

@@ -1,4 +1,4 @@
-/*   
+/*
 Theme Name: RCT
 Theme URI: https://github.com/renancouto/RCT
 Description: Let's get this started!
@@ -9,12 +9,12 @@ Version: 1
 
 // Imports
 
-@import	
+@import
 	'reset/_',
 	'shared/_',
-	
+
 	'_vars',
-	
+
 	'helpers',
 	'structure',
 	'type',
@@ -23,4 +23,5 @@ Version: 1
 	'grid',
 	'portfolio.item',
 	'portfolio.item.info',
-	'post';
+	'post',
+	'comments';

@@ -1,5 +1,15 @@
 // TYPE
 
+%type {
+	color: #fff;
+	font: 14px $f-text;
+	text-shadow: rgba(0,0,0,.7) 0 1px 1px;
+
+	a {
+		color: $c-orange-link;
+	}
+}
+
 .heading {
 	color: $c-orange;
 	font: 200 30px/1em $f-heading;
