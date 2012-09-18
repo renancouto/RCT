@@ -52,4 +52,11 @@ body {
 	}
 }
 
-.main-content { margin-left: 200px; }
+.main-content {
+	margin-left: 200px;
+
+	.content {
+		max-width: 850px;
+		padding: $u*4 $u*10 $u*4 43px;
+	}
+}

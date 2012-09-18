@@ -4,7 +4,12 @@
 	@extend %type;
 
 	.heading {
+		border-bottom: 1px solid $c-orange;
+		box-shadow: #000 0 1px 0;
 		font-style: italic;
+		margin-bottom: $u*4;
+		padding-bottom: $u;
+		text-shadow: #000 0 1px 0;
 	}
 
 	.meta { margin-bottom: $u*3; }

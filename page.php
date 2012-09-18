@@ -9,22 +9,24 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article class="post" id="post-<?php the_ID(); ?>">
+			<div class="content">
 
-			<h1 class="heading"><?php the_title(); ?></h2>
-			<?php /*include (TEMPLATEPATH . '/_/inc/meta.php' );*/ ?>
+				<h1 class="heading"><?php the_title(); ?></h2>
+				<?php /*include (TEMPLATEPATH . '/_/inc/meta.php' );*/ ?>
 
-			<div class="entry">
-				<?php
-					the_content();
-					wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number'));
-				?>
+				<div class="entry">
+					<?php
+						the_content();
+						wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number'));
+					?>
+				</div>
+
+				<?php edit_post_link('Editar', '<p>', '</p>'); ?>
 			</div>
-
-			<?php edit_post_link('Editar', '<p>', '</p>'); ?>
 
 		</article>
 
-		<?php comments_template(); ?>
+		<?php /* comments_template(); */ ?>
 
 		<?php endwhile; endif; ?>
 

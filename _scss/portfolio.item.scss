@@ -3,7 +3,8 @@
 .portfolio-item {
 
 	> .content {
-		padding: $u*4 0 $u*4 43px;
+		padding-right: 0;
+		max-width: none;
 
 		figure {
 			margin-top: $u*4;
@@ -15,7 +16,7 @@
 		background: #fff;
 		box-shadow: rgba(0,0,0,.75) 0 1px 5px;
 		display: block;
-		padding: 3px;
+		padding: 4px;
 		width: 90%;
 		max-width: 850px;
 	}
