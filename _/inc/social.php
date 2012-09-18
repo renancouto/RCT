@@ -1,3 +1,4 @@
+<?php /* ?>
 <ul class="social-area">
 	<li>
 		<div class="fb-like" data-href="http://renancouto.com" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false" data-colorscheme="dark"></div>
@@ -11,3 +12,4 @@
 		<div class="g-plusone" data-size="medium" data-href="http://renancouto.com"></div>
 	</li>
 </ul>
+<?php */ ?>
