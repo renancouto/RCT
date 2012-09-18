@@ -8,6 +8,7 @@
 		margin-bottom: $u*8;
 		position: relative;
 		width: 326px;
+		text-transform: uppercase;
 
 		&:after, &:before {
 			background: url($p-images + 'title-sprite.png');

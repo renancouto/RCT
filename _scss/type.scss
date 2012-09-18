@@ -5,14 +5,11 @@
 	font: 14px $f-text;
 	text-shadow: rgba(0,0,0,.7) 0 1px 1px;
 
-	a {
-		color: $c-orange-link;
-	}
+	a { color: $c-orange-link; }
 }
 
 .heading {
 	color: $c-orange;
 	font: 200 30px/1em $f-heading;
-	text-transform: uppercase;
 	text-shadow: #000 0 -1px 0;
 }

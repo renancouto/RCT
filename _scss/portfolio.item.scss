@@ -1,25 +1,21 @@
 // PORTFOLIO ITEM
 
 .portfolio-item {
-	
+
 	> .content {
 		padding: $u*4 0 $u*4 43px;
-		
+
 		figure {
 			margin-top: $u*4;
-			
-			&:first-child {
-				margin-top: 0;
-			}
+			&:first-child { margin-top: 0; }
 		}
 	}
-	
+
 	.figure {
 		background: #fff;
-		border-radius: $u;
 		box-shadow: rgba(0,0,0,.75) 0 1px 5px;
 		display: block;
-		padding: $u;
+		padding: 3px;
 		width: 90%;
 		max-width: 850px;
 	}

@@ -1,28 +1,24 @@
 // GRID
 
 .grid-list {
-	
+
 	li {
 		float: left;
 		margin: 0 $u*4 $u*4 0;
 	}
-	
+
 	.item {
 		background: #fff;
 		border: 2px solid #fff;
-		border-radius: 4px;
 		box-shadow: rgba(0,0,0,.75) 0 1px 5px;
 		display: block;
 		position: relative;
 		overflow: hidden;
-		
-		img {
-			border-radius: 2px;
-			display: block;
-		}
-		
+
+		img { display: block; }
+
 		&:hover {
-			.info {				
+			.info {
 				bottom: 0;
 				opacity: 1;
 			}

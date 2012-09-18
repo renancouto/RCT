@@ -19,6 +19,8 @@
 			top: 1px;
 			left: -12px;
 			@include dim(6px, 7px);
+
+			.webkit & { top: 3px; }
 		}
 
 		&:hover { color: lighten($c-orange, 20); }
@@ -26,9 +28,9 @@
 
 	.current-menu-item a,
 	.current-page-ancestor a {
-		cursor: default;
+		// cursor: default;
 
-		&:hover { color: $c-orange; }
+		// &:hover { color: $c-orange; }
 		&:before { display: block; }
 	}
 }

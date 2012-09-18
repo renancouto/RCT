@@ -3,9 +3,11 @@
 .post {
 	@extend %type;
 
-	.meta {
-		margin-bottom: $u*3;
+	.heading {
+		font-style: italic;
 	}
+
+	.meta { margin-bottom: $u*3; }
 
 	.date {
 		color: $c-orange;
@@ -14,4 +16,19 @@
 	}
 
 	a { color: $c-orange-link; }
+
+	.comments-link {
+		background: $c-orange-link;
+		border-radius: 10px;
+		box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+		color: darken(#fff, 80);
+		font-size: 11px;
+		margin-left: $u;
+		padding: 0 $u;
+		position: relative;
+		text-decoration: none;
+		text-shadow: #fff 0 1px 0;
+
+		&:hover { background: $c-orange; }
+	}
 }
